@@ -1,0 +1,91 @@
+body{
+	font-family:  sans-serif;
+	margin: 0;
+	background: #ddd;
+}
+header {
+	background: linear-gradient(to right, #008ce4 ,#00cce4);
+	color: #fff;
+	height: 80px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.main_heading {
+	padding: 20px;
+}
+nav li {
+	display: inline;
+}
+nav {
+	margin-top: 10px;
+	float: right;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+	font-weight: 500;
+	font-size: 15px;
+}
+a:hover {
+	color: #999;
+}
+.main_section {
+	font-size: 12px;
+}
+.main_page {
+	margin-top: 100px;
+}
+section > p {
+	margin-top: 15px;
+	color: #666;
+	font-size: 13px;
+	line-height: 1.5;
+}
+.image1, .image2, .image3 {
+	max-width: 300px;
+	margin-top: 15px;
+	height: 230px;	 
+	box-shadow: 5px 5px 5px #aaaaaa;
+}
+
+aside{
+	margin-top: 50px;
+	color: #444;
+}
+.hero_section > img {
+	width: 1000px;
+	height: 500px;
+	margin: 50px 125px;
+}
+.hero_section > p {
+	font-family: roboto sans-serif;
+	margin: 0 125px 50px;
+	line-height: 2;
+	font-size: 14px;
+	color: #007373;
+	font-style: italic;
+}
+footer{
+	background: #444;
+	height: 180px;
+}
+.address {
+	padding: 25px;
+	color: #fff;
+}
+.help_me {
+	float: right;
+	color: #fff;
+}
+i:hover {
+	color: #aaa;
+}
+.footer_link {
+    font-size: 14px;
+    color:#fff;
+}
+i {
+	margin-right: 25px;
+}
