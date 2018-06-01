@@ -27,8 +27,8 @@ main {
 
 a {
 	text-decoration: none;
-	color: #000;
-	font-weight: 500;
+	color: #fff;
+	font-weight: 550;
 	font-size: 15px;
 }
 a:hover {
@@ -58,7 +58,7 @@ aside{
 	color: #444;
 }
 .hero_section > img {
-	width: 1000px;
+	width: 80%;
 	height: 500px;
 	margin: 50px 125px;
 }
