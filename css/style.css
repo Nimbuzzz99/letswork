@@ -15,11 +15,31 @@ header {
 	top: 30px;
 	left: 10px;
 }
+header span {
+   position: relative;
+   left: 15px;
+   top: 3px;
+   color: #fff;
+   font-weight: 550;
+}
 nav li {
 	display: inline;
 }
 nav {
 	float: right;
+	position: relative;
+	top: -10px;
+	right: 20px;
+}
+input {
+	border: none;
+	border-radius: 6px;
+	height: 25px;
+	background: #eee;
+}
+.fa-search {
+	width: 10px;
+	margin-right: 10px;
 }
 main {
 	margin-top: 170px;
@@ -77,8 +97,8 @@ footer{
 	color: #fff;
 	margin-left: -10px;
 }
-.help_me {
-	margin-top: 15px;
+.help_me, .fontawesome{
+	margin-top: 25px;
 	color: #fff;
 }
 i:hover {
