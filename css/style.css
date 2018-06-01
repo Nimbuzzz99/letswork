@@ -71,14 +71,14 @@ aside{
 }
 footer{
 	background: #444;
-	height: 180px;
 }
 .address {
-	padding: 25px;
+	margin-top: 25px;
 	color: #fff;
+	margin-left: -10px;
 }
 .help_me {
-	float: right;
+	margin-top: 15px;
 	color: #fff;
 }
 i:hover {
