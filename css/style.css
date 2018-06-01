@@ -6,20 +6,23 @@ body{
 header {
 	background: linear-gradient(to right, #008ce4 ,#00cce4);
 	color: #fff;
-	height: 80px;
 	position: fixed;
 	top: 0;
 	width: 100%;
 }
 .main_heading {
-	padding: 20px;
+	position: relative;
+	top: 30px;
+	left: 10px;
 }
 nav li {
 	display: inline;
 }
 nav {
-	margin-top: 10px;
 	float: right;
+}
+main {
+	margin-top: 170px;
 }
 
 a {
@@ -60,7 +63,6 @@ aside{
 	margin: 50px 125px;
 }
 .hero_section > p {
-	font-family: roboto sans-serif;
 	margin: 0 125px 50px;
 	line-height: 2;
 	font-size: 14px;
