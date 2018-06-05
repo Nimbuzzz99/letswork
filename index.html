@@ -6,85 +6,235 @@
 	<meta name="description" content="Place where we can work together">
 	<meta name="keywords" content="HTML,CSS,WorkSpace,LetsWork">
 	<meta name="author" content="Sharoon">
-	<link rel="stylesheet" href="css/960_12_col.css">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/text.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-glyphicons.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 </head>
+
 <body>
 	<!-- header starts here -->
-	<header>
-		<h1 class="main_heading">WorkSpace</h1><span>Lets Work Together</span>
-		<!-- navbar starts here -->
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Contact</a></li>
-				<li><a href="#">Help</a></li>
-				<li><input type="text" placeholder="City , Country"><span class="fa fa-search"></span></li>
-			</ul>
-		</nav>
-		<!-- navbar ends here -->
+	<header class="navbar navbar-fixed-top">
+		<div class="container">
+			<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="main_heading navbar-brand">WorkSpace</a>
+			<!-- navbar starts here -->
+			<nav class="nav-collapse collapse navbar-responsive-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Products</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Server Rooms</a></li>
+							<li><a href="#">Cafeteria</a></li>
+							<li><a href="#">Discussion Rooms</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Help</a></li>
+					<form class="navbar-form pull-left">
+						<input type="text" class="form-control" id="searchbar" placeholder="City , Country....">
+						<button class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+					</form>
+				</ul>
+				<ul class="nav navbar-nav pull-right">
+					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user">User</span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#"><span class="glyphicon glyphicon-wrench"></span>Settings</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-refresh"></span>Profile</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Log Out</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<!-- navbar ends here -->
+
+
+		</div>
 	</header>
 	<!-- header ends here -->
 
 
 
-	<div class="main_page">
-		<main>
-			<div class="container_12">
+	<div class="doublepic container">
+		<div class="carousel slide" id="myCarousel">
+			
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+				<li data-slide-to="1" data-target="#myCarousel"></li>
+			</ol>
+			
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+				<div class="item active" id="slide1">
+					<div class="carousel-caption">
+						<p>Teams of artists, designers, and engineers custom build every space, prioritizing natural light, comfort, and inspiration.</p>
+					</div><!-- end carousel-caption-->
+				</div><!-- end item -->
 
+				<div class="item" id="slide2">
+					<div class="carousel-caption">
+						<p>We’ve become experts in what you need to get work done happily—from brainstorming rooms to phone booths and terraces.</p>
+					</div><!-- end carousel-caption-->
+				</div><!-- end item -->
+			</div><!-- carousel-inner -->
 
-				<!-- three column section starts here -->
-				<section class="main_section grid_12">
-					<img src="img/2.jpg" class="image1 grid_4 alpha" alt="coffee" >
-					<img src="img/9-1.jpg" class="image2 grid_4" alt="books" >
-					<img src="img/business.jpg" class="image3 grid_4 omega" alt="business" >
-					<p class="grid_4 alpha">WorkSpace is an Indian company that provides shared workspaces, technology startup subculture communities, and services for entrepreneurs, freelancers, startups, small businesses and large enterprises. Founded in 2018, it is headquartered in Bengaluru. WorkSpace has a current valuation of roughly US$20 billion and manages 10 million square feet of office space</p>
-					<p class="grid_4">The nature of work is changing. Recruitment, retention, innovation, and productivity now require not just coffee, but also yoga, not just printers, but also art installations. WeWork offers companies of all sizes the opportunity to reimagine employees’ days through refreshing design, engaging community, and benefits for all.</p>
-					<p class="grid_4 omega">WorkSpace is a global network of workspaces where companies and people grow together. We transform buildings into dynamic environments for creativity, focus, and connection. More than just the best place to work, though, this is a movement toward humanizing work. We believe that CEOs can help each other, offices can use the comforts of home, and we can all look forward to Monday if we find real meaning in what we do.</p>
-				</section>	
-				<!-- three column section ends here -->
-
-
-			</div>
-		</main>
-
-
-		<div class="container_12">
-			<!-- two columns with three rows starts -->
-			<aside class="grid_12">
-				<img class="grid_4 alpha" src="img/download.png" alt="donut chart">
-				<div class="grid_8 omega">
-					<div class="grid_8"><p>Teams of artists, designers, and engineers custom build every space, prioritizing natural light, comfort, and inspiration.</p></div>
-					<div class="grid_8"><p>We’ve become experts in what you need to get work done happily—from brainstorming rooms to phone booths and terraces.</p></div>
-					<div class="grid_8"><p>You focus on your to-do’s, we take care of the rest. Enjoy included front-desk service, utilities, refreshments, and more.The Global Network With over 210,000 members, access networking, advice, and opportunities in your ‘hood or across the planet.</p></div>
-				</div>
-			</aside>
-			<!-- two columns with three rows ends -->
-		</div>
-
-
-
-		<!-- hero section starts -->
-		<div class="hero_section">
-			<img src="img/workspace1.jpg" alt="worspace home">
-			<p>WorkSpace is an Indian company that provides shared workspaces, technology startup subculture communities, and services for entrepreneurs, freelancers, startups, small businesses and large enterprises. Founded in 2018, it is headquartered in Bengaluru. WorkSpace has a current valuation of roughly US$20 billion and manages 10 million square feet of office space. WorkSpace is a global network of workspaces where companies and people grow together. We transform buildings into dynamic environments for creativity, focus, and connection. More than just the best place to work, though, this is a movement toward humanizing work. We believe that CEOs can help each other, offices can use the comforts of home, and we can all look forward to Monday if we find real meaning in what we do.</p>
-		</div>
-		<!-- hero section ends here -->
-
-
+			<!-- Controls -->
+			<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
+			<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
+			
+		</div><!-- end myCarousel -->
 	</div>
+
+
+
+	<main class="main_page container">
+
+		<section class="row" id="features">
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<img src="img/2.jpg" class="image1" alt="coffee" >
+
+					<p>WorkSpace is an Indian company that provides shared workspaces, services for entrepreneurs, freelancers, startups, small businesses and large enterprises. Founded in 2018, it is headquartered in Bengaluru. WorkSpace has a current valuation of roughly US$20 billion and manages 10 million square feet of office space</p>
+				</div><!-- end panel -->
+			</div><!-- end feature -->
+
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<img src="img/9-1.jpg" class="image2" alt="books" >
+
+					<p>The nature of work is changing. Recruitment, retention, innovation, and productivity now require not just coffee, but also yoga, not just printers, but also art installations. WeWork offers companies of all sizes the opportunity to reimagine employees’ days through refreshing design, engaging community, and benefits for all.</p>
+				</div><!-- end panel -->
+			</div><!-- end feature -->
+
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<img src="img/business.jpg" class="image3" alt="business" >
+
+					<p>WorkSpace is a global network of workspaces where companies and people grow together. We transform buildings into dynamic environments for creativity, focus, and connection. More than just the best place to work, though, this is a movement toward humanizing work. We believe that CEOs can help each other, offices can use the comforts of home, and we can all look forward to Monday if we find real meaning in what we do.</p>
+				</div><!-- end panel -->
+			</div><!-- end feature -->
+		</section><!-- end features -->
+
+	</main>
+
+
+	<aside class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="tabbable">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+						<li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active col-12" id="tab1">
+							<iframe width="100%" height="300" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+						</div><!-- end tab-pane -->
+						
+						<div class="tab-pane" id="tab2">
+							<img class="col-sm-4 donut" src="img/download.png" alt="donut chart">
+							<div class="col-sm-8">
+								<div class="col-sm-8"><p>Teams of artists, designers, and engineers custom build every space, prioritizing natural light, comfort, and inspiration.</p></div>
+								<div class="col-sm-8"><p>We’ve become experts in what you need to get work done happily—from brainstorming rooms to phone booths and terraces.</p></div>
+								<div class="col-sm-8"><p>You focus on your to-do’s, we take care of the rest. Enjoy included front-desk service, utilities, refreshments, and more.The Global Network With over 210,000 members, access networking, advice, and opportunities in your ‘hood or across the planet.</p></div>
+							</div>
+							
+						</div><!-- end tab-pane -->
+					</div><!-- end tab-content -->
+				</div><!-- end tabbable -->
+			</div><!-- end col-sm-6 -->
+
+
+
+			<!-- hero section starts -->
+			<div class="hero_section col-12">
+				<img src="img/workspace1.jpg" alt="workspace home">
+				<p>WorkSpace is an Indian company that provides shared workspaces, technology startup subculture communities, and services for entrepreneurs, freelancers, startups, small businesses and large enterprises. Founded in 2018, it is headquartered in Bengaluru. WorkSpace has a current valuation of roughly US$20 billion and manages 10 million square feet of office space. WorkSpace is a global network of workspaces where companies and people grow together. We transform buildings into dynamic environments for creativity, focus, and connection. More than just the best place to work, though, this is a movement toward humanizing work. We believe that CEOs can help each other, offices can use the comforts of home, and we can all look forward to Monday if we find real meaning in what we do.</p>
+			</div>
+			<!-- hero section ends here -->
+
+
+			<a href="#myModal" role="button" class="btn btn-warning col-12" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span> Click here to Subscribe</a>
+
+			<div class="modal fade" id="myModal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button class="close" data-dismiss="modal">&times;</button>
+
+							<h4 class="modal-title">A Modal Window</h4>
+						</div><!-- end modal-header -->
+						<div class="modal-body">
+							<h4>Subscribe for further updates</h4>
+
+							<form class="form-horizontal">
+								<div class="form-group">
+									<label class="col-lg-2 control-label" for="inputName">Name</label>
+									<div class="col-lg-10">
+										<input class="form-control" id="inputName" placeholder="Name" type="text">
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label class="col-lg-2 control-label" for="inputEmail">Email</label>
+									<div class="col-lg-10">
+										<input class="form-control" id="inputEmail" placeholder="Email" type="email">
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label class="col-lg-2 control-label" for="inputMessage">Message</label>
+									<div class="col-lg-10">
+										<textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"></textarea>
+										<button class="btn btn-success pull-right submitbtn" type="submit">Send!</button>
+									</div>
+								</div>
+							</form>
+						</div><!-- end modal-body -->
+
+						<div class="modal-footer">
+							<button class="btn btn-default" data-dismiss="modal" type="button">Close</button> <button class="btn btn-primary" type="button">Save changes</button>
+						</div><!-- end modal-footer -->
+					</div><!-- end modal-content -->
+				</div><!-- end modal-dialog -->
+			</div><!-- end myModal -->
+
+		</div>
+	</aside>
+
 
 
 	<!-- footer starts -->
 	<footer>
-		<section class="container_12">
-			<div class="grid_12">
-				<p class="address grid_4 alpha">Copyrights &copy; 2018 All Rights Reserved by WorkSpace Inc.<br>
+		<section class="container">
+			<div class="row">
+				<p class="address col-sm-4 alpha">Copyrights &copy; 2018 All Rights Reserved by WorkSpace Inc.<br>
 					<a href="#" class="footer_link">Terms of Use</a> / <a href="#" class="footer_link">Privacy Policy</a></p>
-					<div class="help_me grid_4">
+					<div class="help_me col-sm-4">
 						<h6>Contact Us</h6>
 						<p>700 York Ave. 
 							Portland, ME 04103<br>
@@ -94,16 +244,19 @@
 					</div>
 					<!-- font awesome icons used here -->
 
-					<div class="fontawesome grid_4 omega">
-						<i class="fa fa-facebook" style="font-size: 50px;"></i>
-						<i class="fa fa-twitter" style="font-size: 50px;"></i>
-						<i class="fa fa-linkedin" style="font-size: 50px;"></i>
+					<div class="fontawesome col-sm-4 omega">
+						<i class="fa fa-facebook" style="font-size: 30px;"></i>
+						<i class="fa fa-twitter" style="font-size: 30px;"></i>
+						<i class="fa fa-linkedin" style="font-size: 30px;"></i>
 					</div>
-				</div>
-			</section>
-		</footer> 
+			</div>
+		</section>
+	</footer> 
 		<!-- footer ends -->
 
 
+
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 	</body>
 	</html>
